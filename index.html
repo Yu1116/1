@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机跳转到微信加好友</title>
+    <script>
+        window.onload = function() {
+            // 微信加好友的三个链接（请替换为你实际的链接）
+            var links = [
+                "https://u.wechat.com/EJxwKAZQXBPe8VxZ0Af2UJA?s=2", // 第一个微信加好友链接
+                "https://u.wechat.com/MGkTwwhaiGJwW99quLbWe2k?s=1", // 第二个微信加好友链接
+                "https://u.wechat.com/MMbCcjWK3XxjOmpcNd47BoI"  // 第三个微信加好友链接
+            ];
+            
+            // 随机选择一个链接
+            var randomLink = links[Math.floor(Math.random() * links.length)];
+            
+            // 跳转到随机选择的链接
+            window.location.href = randomLink;
+        };
+    </script>
+</head>
+<body>
+    <!-- 页面可以为空，代码会直接跳转 -->
+</body>
+</html>
